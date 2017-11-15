@@ -6,6 +6,8 @@ WORKDIR /filtron
 
 ADD . /filtron
 
-RUN go build ./filtron.go
+EXPOSE 8888 4004 4005
 
-CMD ["./filtron"]
+COPY ./docker-entrypoint.sh /
+
+ENTRYPOINT ["/docker-entrypoint.sh"]

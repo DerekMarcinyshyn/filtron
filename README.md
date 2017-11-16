@@ -1,5 +1,7 @@
 # Filtron
 
+This is a compiled version of Filtron for using on my Plesk server.
+
 Reverse HTTP proxy to filter requests by different rules.
 Can be used between production webserver and the application server to prevent abuse of the application backend.
 
